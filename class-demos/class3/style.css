@@ -1,0 +1,19 @@
+p {
+    color: red;
+    font-size: 30px;
+}
+
+body {
+    background-color: #120301;
+}
+
+.white {
+    color: white;
+}
+
+#myid {
+    color: green;
+    padding: 30px;
+    border: red 3px solid;
+    margin: 100px;
+}
