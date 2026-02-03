@@ -22,10 +22,35 @@ body {
 
 .room1 {
   top: 12%;
-  left: 34%;
+  right: 6.2%;
 }
 
 .room2 {
   top: 12%;
   left: 51%;
+}
+
+.room3 {
+  top: 35%;
+  left: 50%;
+}
+
+.room4 {
+  top: 28.5%;
+  left: 13%;
+}
+
+.room5 {
+  top: 30%;
+  left: 78%;
+}
+
+.room6 {
+  top: 57%;
+  left: 78%;
+}
+
+.room7 {
+    top: 12%;
+    left: 32%;
 }
