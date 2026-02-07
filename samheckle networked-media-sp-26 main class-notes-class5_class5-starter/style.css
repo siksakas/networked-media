@@ -1,19 +1,81 @@
-/* Q: What is p when defining a rule in CSS? */
-/* A: all paragraphs in the html file*/
-p {
-  /* Q: What is the property that manipulates the horizontal size of the block? Write that property and give it a value of 60%*/
-  width: 60%;
-  
-  /* Q: What are the other units of measurement we use in CSS? */
-  /* A: px, vw, in, vh */
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Q: How do we select a class in CSS? Add a rule by selecting the "blue" class, and change the background color to some blue color. */
-.blue {
-  background-color: blue;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #3c4f73, #131722 70%);
+  color: #eef2ff;
 }
-/* Q: How do we select an id in CSS? Add a rule by selecting the "main" id, add a border, and change the padding to be 10px all around. */
-#main {
-  border: 1px solid black;
-  padding: 10px;
+
+.app {
+  width: min(760px, 92vw);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.dialogue-card {
+  border: 2px solid #aab6ff;
+  border-radius: 14px;
+  background: rgba(13, 17, 29, 0.88);
+  padding: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.speaker-label {
+  font-weight: 700;
+  color: #b6c4ff;
+  min-height: 1.4rem;
+}
+
+.character-art {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0a0d17;
+  border: 1px solid #4d5788;
+  min-height: 250px;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95rem;
+  line-height: 1.05;
+}
+
+.dialogue-text {
+  min-height: 3.2rem;
+  margin: 6px 0 14px;
+  font-size: 1.05rem;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.options button {
+  border: 1px solid #90a0ff;
+  background: #253067;
+  color: #f0f3ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.options button:hover {
+  background: #36459a;
+}
+
+.options button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

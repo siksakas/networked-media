@@ -1,38 +1,21 @@
-<html>
-<!-- Q: What type of content goes inside the <head>? 
-    Does it show up on the webpage? -->
-<!-- A: metadata for the web, it does not show on the webpage itself--> 
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>class 5 demo 😌</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <script src="main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dialogue System Placeholder</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
-
-
-<!-- Q: What type of content goes inside the <body>? 
-    Does it show up on the webpage? -->
-<!-- A: all the elements that will actually be shown on the pages like images text etc.-->
-
 <body>
-
-    <p>this is a paragraph</p>
-    <!-- Q: What type of thing is a class? -->
-    <!-- A: attribute-->
-    <!-- Q: List 2 other types of _ _ _ _ _ _ _ _ _ (hint: they go in the opening tag) -->
-    <!-- A: ID, src-->
-    <!-- Q: How many times can we use a class in a webpage? -->
-    <!-- A: as many as we want-->
-    <p class="blue">this is a second paragraph</p>
-    <!-- Q: How many times can we use an id in a webpage? -->
-    <!-- A: once-->
-    <p id="main">this is a third paragraph</p>
-
-    <!-- now open up style.css -->
-
-    <div id="container"></div>
+  <main class="app">
+    <h1>Dialogue Prototype</h1>
+    <section class="dialogue-card">
+      <div id="speakerLabel" class="speaker-label"></div>
+      <pre id="characterArt" class="character-art" aria-live="polite"></pre>
+      <p id="dialogueText" class="dialogue-text" aria-live="polite"></p>
+      <div id="options" class="options"></div>
+    </section>
+  </main>
 </body>
-
 </html>
